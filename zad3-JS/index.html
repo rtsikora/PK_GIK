@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie - Tablica obiektów</title>
+</head>
+<body>
+    <button onclick="wyswietlObiekty()">Pokaż właściwości obiektów</button>
+
+    <script>
+        // Utworzenie tablicy obiektów
+        const osoby = [
+            {
+                imie: "Jan",
+                nazwisko: "Kowalski",
+                wiek: 25
+            },
+            {
+                imie: "Anna",
+                nazwisko: "Nowak",
+                wiek: 30
+            },
+            {
+                imie: "Piotr",
+                nazwisko: "Wiśniewski",
+                wiek: 35
+            }
+        ];
+
+        // Funkcja wywoływana po kliknięciu przycisku
+        function wyswietlObiekty() {
+            // Pętla przechodząca przez wszystkie obiekty w tablicy
+            for (let i = 0; i < osoby.length; i++) {
+                // Wyświetlenie właściwości każdego obiektu
+                console.log("Imię: " + osoby[i].imie);
+                console.log("Nazwisko: " + osoby[i].nazwisko);
+                console.log("Wiek: " + osoby[i].wiek);
+                console.log("-------------------");
+            }
+        }
+    </script>
+</body>
+</html>
